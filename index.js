@@ -1,14 +1,11 @@
-const axios = require('axios');
+//const { default: Axios } = require("axios");
+//var $ = require( "jquery" );
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-.then(response => response.json())
-.then(json => console.log(json))
+import $ from 'jquery';
 
-
-axios.get('https://jsonplaceholder.typicode.com/todos/1')
-.then((response) => {
-  console.log(response.data);
+$(document).ready(function (){
+    $('body').css('background-color', 'blue');
+    $('body').css('opacity', '50%');
+    $('p').css('font-size' , '24px');
+    
 })
-.catch(function (error) {
-  console.log(error);
-});
